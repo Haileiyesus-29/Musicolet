@@ -7,6 +7,12 @@ const Wrapper = styled.div`
    margin: 0 auto;
    padding: 0 20px;
    box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   min-height: 100svh;
+   & > main {
+      flex-grow: 1;
+   }
 `
 
 function Layout(): JSX.Element {

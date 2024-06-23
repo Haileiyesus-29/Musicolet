@@ -1,9 +1,11 @@
 import styled from '@emotion/styled'
 import { NavLink } from 'react-router-dom'
 import ButtonEl from '../components/Button'
+import SearchEl from '../components/SearchEl'
 
 const Nav = styled.nav`
-   padding: 1rem 10px;
+   padding: 10px;
+   padding-top: 1rem;
    border-bottom: 1px solid #ccc;
    display: flex;
    align-items: center;
@@ -24,6 +26,7 @@ function Navbar() {
          <NavItem to='/'>Home</NavItem>
          <NavItem to='/account'>About</NavItem>
          <NavItem to='/musics'>My Musics</NavItem>
+         <SearchEl />
          <ButtonEl>Logout</ButtonEl>
       </Nav>
    )
